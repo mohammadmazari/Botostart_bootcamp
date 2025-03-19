@@ -39,7 +39,10 @@ function Homepage() {
         </div>
         <span
           className="absolute top-13 w-15 md:w-19 bg-white h-[2px] transition-all"
-          style={{ left: +borderPosition }}
+          style={{
+            left: +borderPosition,
+            display: +borderPosition > 1 ? "block" : "none",
+          }}
         ></span>
       </div>
     </div>
